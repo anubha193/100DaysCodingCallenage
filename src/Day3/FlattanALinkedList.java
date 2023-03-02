@@ -18,7 +18,6 @@ public class FlattanALinkedList
          if(root == null || root.next == null)
        return root;
        root.next = flatten(root.next);
-
        root = merge(root, root.next);
 
      return root;
